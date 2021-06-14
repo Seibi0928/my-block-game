@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="0" time="4.373">
+  <testsuite name="GameControllerTest" errors="0" failures="0" skipped="0" timestamp="2021-06-14T14:09:55" time="4.129" tests="4">
+    <testcase classname="GameControllerTest › startTest-ゲームオーバーでも中断状態でも無いときブロックの塊が作られる" name="GameControllerTest › startTest-ゲームオーバーでも中断状態でも無いときブロックの塊が作られる" time="0.004">
+    </testcase>
+    <testcase classname="GameControllerTest › startTest-ゲームオーバーのときブロックの塊は作られない" name="GameControllerTest › startTest-ゲームオーバーのときブロックの塊は作られない" time="0">
+    </testcase>
+    <testcase classname="GameControllerTest › startTest-指定されたターン数分ブロックの塊が作られる(ゲームオーバーにならないとする)" name="GameControllerTest › startTest-指定されたターン数分ブロックの塊が作られる(ゲームオーバーにならないとする)" time="0.005">
+    </testcase>
+    <testcase classname="GameControllerTest › startTest-指定されたターン数が0以下のとき例外が発生する" name="GameControllerTest › startTest-指定されたターン数が0以下のとき例外が発生する" time="0.02">
+    </testcase>
+  </testsuite>
+</testsuites>

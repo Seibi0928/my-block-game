@@ -1,0 +1,21 @@
+version: '3'
+services:
+  front:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "3000"  
+    volumes:
+      - .:/workspace:cached
+      - /workspace/node_modules
+    command: /bin/sh -c "npm run build;npm start;while sleep 1000; do :; done" 
+    container_name: tutorial_frontend_server
+  proxy:
+    image: nginx:latest
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "8080:80"
+    depends_on:
+      - front
